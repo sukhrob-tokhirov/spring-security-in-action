@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS users (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(45) NOT NULL,
+  username VARCHAR(45) NOT NULL,
+  password VARCHAR(45) NOT NULL,
+  enabled INT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS permissions (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(45) NOT NULL,
+    authority VARCHAR(45) NOT NULL
+);
